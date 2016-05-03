@@ -17,7 +17,18 @@
 		EB480EF11C6C301F00A4A2CA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB480EEF1C6C301F00A4A2CA /* Recipe.swift */; };
 		EB480EF71C6C3D0800A4A2CA /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB480EF61C6C3D0800A4A2CA /* RecipeTableViewCell.swift */; };
 		EB480EF91C6C668E00A4A2CA /* CreateRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB480EF81C6C668E00A4A2CA /* CreateRecipeViewController.swift */; };
+		EBF8E5C01CC83F6600911781 /* recipezUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8E5BF1CC83F6600911781 /* recipezUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBF8E5C21CC83F6600911781 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB480ECB1C6C28CF00A4A2CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB480ED21C6C28CF00A4A2CA;
+			remoteInfo = recipez;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EB480ED31C6C28CF00A4A2CA /* recipez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipez.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +43,20 @@
 		EB480EEF1C6C301F00A4A2CA /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
 		EB480EF61C6C3D0800A4A2CA /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		EB480EF81C6C668E00A4A2CA /* CreateRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecipeViewController.swift; sourceTree = "<group>"; };
+		EBF8E5BD1CC83F6600911781 /* recipezUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recipezUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF8E5BF1CC83F6600911781 /* recipezUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipezUITests.swift; sourceTree = "<group>"; };
+		EBF8E5C11CC83F6600911781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EB480ED01C6C28CF00A4A2CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF8E5BA1CC83F6600911781 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				EB480ED51C6C28CF00A4A2CA /* recipez */,
+				EBF8E5BE1CC83F6600911781 /* recipezUITests */,
 				EB480ED41C6C28CF00A4A2CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				EB480ED31C6C28CF00A4A2CA /* recipez.app */,
+				EBF8E5BD1CC83F6600911781 /* recipezUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +126,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		EBF8E5BE1CC83F6600911781 /* recipezUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBF8E5BF1CC83F6600911781 /* recipezUITests.swift */,
+				EBF8E5C11CC83F6600911781 /* Info.plist */,
+			);
+			path = recipezUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,18 +155,40 @@
 			productReference = EB480ED31C6C28CF00A4A2CA /* recipez.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EBF8E5BC1CC83F6600911781 /* recipezUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF8E5C61CC83F6600911781 /* Build configuration list for PBXNativeTarget "recipezUITests" */;
+			buildPhases = (
+				EBF8E5B91CC83F6600911781 /* Sources */,
+				EBF8E5BA1CC83F6600911781 /* Frameworks */,
+				EBF8E5BB1CC83F6600911781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBF8E5C31CC83F6600911781 /* PBXTargetDependency */,
+			);
+			name = recipezUITests;
+			productName = recipezUITests;
+			productReference = EBF8E5BD1CC83F6600911781 /* recipezUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		EB480ECB1C6C28CF00A4A2CA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Mengying Feng";
 				TargetAttributes = {
 					EB480ED21C6C28CF00A4A2CA = {
 						CreatedOnToolsVersion = 7.2.1;
+					};
+					EBF8E5BC1CC83F6600911781 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EB480ED21C6C28CF00A4A2CA;
 					};
 				};
 			};
@@ -152,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				EB480ED21C6C28CF00A4A2CA /* recipez */,
+				EBF8E5BC1CC83F6600911781 /* recipezUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +219,13 @@
 				EB480EE41C6C28CF00A4A2CA /* LaunchScreen.storyboard in Resources */,
 				EB480EE11C6C28CF00A4A2CA /* Assets.xcassets in Resources */,
 				EB480EDC1C6C28CF00A4A2CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF8E5BB1CC83F6600911781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +246,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBF8E5B91CC83F6600911781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF8E5C01CC83F6600911781 /* recipezUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBF8E5C31CC83F6600911781 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB480ED21C6C28CF00A4A2CA /* recipez */;
+			targetProxy = EBF8E5C21CC83F6600911781 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EB480EDA1C6C28CF00A4A2CA /* Main.storyboard */ = {
@@ -311,6 +389,32 @@
 			};
 			name = Release;
 		};
+		EBF8E5C41CC83F6600911781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = recipezUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilyvon.recipezUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = recipez;
+			};
+			name = Debug;
+		};
+		EBF8E5C51CC83F6600911781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = recipezUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilyvon.recipezUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = recipez;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -328,6 +432,15 @@
 			buildConfigurations = (
 				EB480EE91C6C28CF00A4A2CA /* Debug */,
 				EB480EEA1C6C28CF00A4A2CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF8E5C61CC83F6600911781 /* Build configuration list for PBXNativeTarget "recipezUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF8E5C41CC83F6600911781 /* Debug */,
+				EBF8E5C51CC83F6600911781 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
